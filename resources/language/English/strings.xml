@@ -14,4 +14,5 @@
     <string id="32009">ItaSA only works with tv shows subtitles</string>
 	<string id="32010">Subtitle downloaded too many times</string>
 	<string id="32011">No video playing, exiting</string>
+    <string id="32012">Convert subtitle to .ass</string>
 </strings>

@@ -3,5 +3,6 @@
     <category label="32003">
       <setting id="ITuser" type="text" label="32001" default=""/>
       <setting id="ITpass" type="text" option = "hidden" label="32002" default=""/>
+      <setting id="ConvertToAss" type="bool" label="32012" default="false"/>
     </category>   
 </settings>

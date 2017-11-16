@@ -579,6 +579,10 @@ if xbmc.Player().isPlayingVideo():
 		## in XBMC core
 		log('Pass the subtitle paths to xbmc')
 		for sub in subs:
+			convert = __addon__.getSetting( 'ConvertToAss' )
+			if convert:
+				from srt2ass import srt2ass
+				sub = srt2ass(sub)
 			listitem = xbmcgui.ListItem(label = sub)
 			xbmcplugin.addDirectoryItem(handle = int(sys.argv[1]), url = sub, listitem = listitem, isFolder = False)
 
