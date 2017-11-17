@@ -57,7 +57,7 @@ def srt2ass(input_file):
         else:
             if re.match('-?\d\d:\d\d:\d\d', line):
                 line = line.replace('-0', '0')
-                tmpLines += 'Dialogue: 0,' + line + ',SubStyle,,0,0,0,,'
+                tmpLines += 'Dialogue: 0,' + line + ',Default,,0,0,0,,'
             else:
                 if lineCount < 2:
                     tmpLines += line

@@ -580,7 +580,7 @@ if xbmc.Player().isPlayingVideo():
 		log('Pass the subtitle paths to xbmc')
 		for sub in subs:
 			convert = __addon__.getSetting( 'ConvertToAss' )
-			if convert:
+			if convert == 'true':
 				from srt2ass import srt2ass
 				sub = srt2ass(sub)
 			listitem = xbmcgui.ListItem(label = sub)
